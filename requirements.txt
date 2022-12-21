@@ -1,0 +1,8 @@
+aiohttp==3.8.1
+APScheduler==3.9.1
+hikari==2.0.0.dev113
+hikari_lightbulb==2.3.1
+lavasnek_rs==0.1.0a5
+lightbulb==0.1d
+python-dotenv==0.21.0
+pytz==2020.1
