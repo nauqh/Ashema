@@ -4,7 +4,7 @@
 
 ![Python](https://img.shields.io/badge/Made%20With-Python%203.8-blue.svg?style=for-the-badge&logo=Python)
 ![Discord](https://img.shields.io/discord/574921006817476608.svg?label=Discord&logo=Discord&colorB=7289da&style=for-the-badge)
-![Heroku](https://img.shields.io/badge/deploy_to-heroku-997FBC.svg?style=for-the-badge&logo=Heroku)
+![Reailway](https://img.shields.io/badge/deploy_to-Railway-a0c4ff.svg?style=for-the-badge&logo=Railway)
 
 **Update** (21 December 2022): Deploy Lavalink server on `Replit`
 ## What is Ashema?
