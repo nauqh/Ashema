@@ -1,4 +1,5 @@
 import logging
+import os
 from typing import Optional
 from datetime import datetime as dt
 
@@ -60,7 +61,7 @@ async def start_lavalink(event: hikari.ShardReadyEvent) -> None:
 
     builder = (
         lavasnek_rs.LavalinkBuilder(
-            event.my_user.id, 'OTc0NTc0ODAzMTgyODIxMzg2.GL2K7q.4KbF_uVeUq7jgOgySNrJymJ_OfD94ViYxKlqow').set_is_ssl(True).set_port(443)
+            event.my_user.id, os.environ["TOKEN"]).set_is_ssl(True).set_port(443)
         .set_host("lavalink.nauqh.repl.co").set_password('Ilovemyfamily110')
     )
 
