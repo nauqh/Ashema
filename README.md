@@ -3,7 +3,6 @@
 ![Version](https://img.shields.io/badge/Latest%20Version-V3.1.0-blue?style=for-the-badge)
 
 ![Python](https://img.shields.io/badge/Made%20With-Python%203.8-blue.svg?style=for-the-badge&logo=Python)
-![Discord](https://img.shields.io/discord/574921006817476608.svg?label=Discord&logo=Discord&colorB=7289da&style=for-the-badge)
 ![Reailway](https://img.shields.io/badge/deploy_to-Railway-a0c4ff.svg?style=for-the-badge&logo=Railway)
 
 **Update** (21 December 2022): Deploy Lavalink server on `Replit`
@@ -11,7 +10,7 @@
 
 <img src="ashema.gif" alt="drawing"  height="250"/>
 
-Custom music bot for housekeeping. The bot is for personal study about the new python library [**Hikari**](https://www.hikari-py.dev/) for developing Discord bots and practice working with Lavalink APIs as well as maintaining and hosting the application.
+Custom music bot for housekeeping. The bot is for personal study about the new python library [**Hikari**](https://www.hikari-py.dev/) for developing Discord bots and practice working with Lavalink APIs.
 
 ## Features
 
