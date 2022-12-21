@@ -13,12 +13,12 @@ Custom music bot for housekeeping. The bot is for personal study about the new p
 ## Lavalink hosting
 - [x] Lavalink's port will always 443 
 - [x] Default password `youshallnotpass`
-- [x] using custom lavalink client if your client doesnt support secure options
+- [x] Using custom lavalink client if your client doesnt support secure options
 
 
 ## Bot hosting
 
-Unfortunately, due to how this bot functions, it cannot be invited. The lack of an invite link is to ensure an individuality to your server and grant you full control over your bot and data. Nonetheless, you can quickly obtain a free copy of Ashema for your server by following one of the methods listed below (roughly takes 15 minutes of your time).
+Unfortunately, due to how this bot functions, it cannot be invited. The lack of an invite link is to ensure an individuality to your server and grant you full control over your bot and data. Nonetheless, you can quickly obtain a free copy of Ashema for your server by following one of the methods listed below.
 
 ### Heroku
 
@@ -28,13 +28,13 @@ To configure automatic updates:
  - [x] Login to [GitHub](https://github.com/) and verify your account.
  - [x] [Fork the repo](https://github.com/kyb3r/modmail/fork).
  - [x] Install the [Pull app](https://github.com/apps/pull) for your fork. 
- - [x] Then go to the Deploy tab in your [Heroku account](https://dashboard.heroku.com/apps) of your bot app, select GitHub and connect your fork (usually by typing "Tiamut") 
+ - [x] Then go to the Deploy tab in your [Heroku account](https://dashboard.heroku.com/apps) of your bot app, select GitHub and connect your fork (usually by typing `Ashema`) 
  - [x] Turn on auto-deploy for the `master` branch.
 
 
 ### Installation
 
-Local hosting of Tiamut is also possible
+Local hosting of Ashema is also possible
 
 Install dependencies:
 
