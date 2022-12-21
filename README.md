@@ -1,6 +1,6 @@
 # Ashema The Listener - Music Discord Bot                          
 
-![Python](https://img.shields.io/badge/Made%20With-Python%203.8-blue.svg?style=for-the-badge&logo=Python)
+![Python](https://img.shields.io/badge/Made%20With-Python%203.8-blue.svg?style=for-the-badge&logo=Python&logoColor=white)
 ![Version](https://img.shields.io/badge/Latest%20Version-V3.1.0-blue?style=for-the-badge)
 
 **Update** (21 December 2022): Deploy Lavalink server on `Replit`
