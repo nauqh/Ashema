@@ -119,11 +119,9 @@ async def play(ctx: lightbulb.Context) -> None:
     if not con:
         await _join(ctx)
 
-    # Search the query, auto_search will get the track from a url if possible, otherwise,
-    # it will search the query on youtube.
     query_information = await plugin.bot.d.lavalink.auto_search_tracks(query)
 
-    if not query_information.tracks:  # tracks is empty
+    if not query_information.tracks:
         await ctx.respond("Could not find any video of the search query.")
         return
 

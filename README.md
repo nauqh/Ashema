@@ -12,40 +12,26 @@
 
 Custom music bot for housekeeping. The bot is for personal study about the new python library [**Hikari**](https://www.hikari-py.dev/) for developing Discord bots and practice working with Lavalink APIs.
 
-## Features
-
-* **Daily notification:**
-  * Schedule task in human time
-  * Daily updates using Spotify API
-  * `Slash comands` and *command aliases*
-  * Minimum length for members to be in the guild before allowed to contact Tiamut (`guild_age`)
-
-* **Moderation functionality:**
-  * When you close a thread, Tiamut will generate a [log link](https://logs.modmail.dev/example) and post it to your log channel.
-  * Editing and deleting messages are synced
-  * Modmailing with support for the diverse range of message contents (multiple images, files)
-
-* **Database:**
-  * Maintain system database using `SQLite3` library
-  * See past logs of a user with `logs`
-  * Paginated commands interfaces via reactions
-  * Searchable by text queries using `logs search`
+## Lavalink hosting
+- [x] Lavalink's port will always 443 
+- [x] Default password `youshallnotpass`
+- [x] using custom lavalink client if your client doesnt support secure options
 
 
-## Hosting
+## Bot hosting
 
-Unfortunately, due to how this bot functions, it cannot be invited. The lack of an invite link is to ensure an individuality to your server and grant you full control over your bot and data. Nonetheless, you can quickly obtain a free copy of Tiamut for your server by following one of the methods listed below (roughly takes 15 minutes of your time).
+Unfortunately, due to how this bot functions, it cannot be invited. The lack of an invite link is to ensure an individuality to your server and grant you full control over your bot and data. Nonetheless, you can quickly obtain a free copy of Ashema for your server by following one of the methods listed below (roughly takes 15 minutes of your time).
 
 ### Heroku
 
 You can host this bot on Heroku.
 
 To configure automatic updates:
- - Login to [GitHub](https://github.com/) and verify your account.
- - [Fork the repo](https://github.com/kyb3r/modmail/fork).
- - Install the [Pull app](https://github.com/apps/pull) for your fork. 
- - Then go to the Deploy tab in your [Heroku account](https://dashboard.heroku.com/apps) of your bot app, select GitHub and connect your fork (usually by typing "Tiamut") 
- - Turn on auto-deploy for the `master` branch.
+ - [x] Login to [GitHub](https://github.com/) and verify your account.
+ - [x] [Fork the repo](https://github.com/kyb3r/modmail/fork).
+ - [x] Install the [Pull app](https://github.com/apps/pull) for your fork. 
+ - [x] Then go to the Deploy tab in your [Heroku account](https://dashboard.heroku.com/apps) of your bot app, select GitHub and connect your fork (usually by typing "Tiamut") 
+ - [x] Turn on auto-deploy for the `master` branch.
 
 
 ### Installation
@@ -62,7 +48,7 @@ Clone the repo:
 
 ```sh
 $ git clone https://github.com/nauqh/music-bot
-$ cd tiamut
+$ cd ashema
 ```
 
 Create a `.env` file to store the application authentication token and guild ids.
@@ -70,7 +56,7 @@ Create a `.env` file to store the application authentication token and guild ids
 Finally, start the bot
 
 ```sh
-$ python -m tiamut
+$ python -m ashema
 ```
 
 ## Documentation
