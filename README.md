@@ -1,9 +1,7 @@
 # Ashema The Listener - Music Discord Bot                          
 
-![Version](https://img.shields.io/badge/Latest%20Version-V3.1.0-blue?style=for-the-badge)
-
 ![Python](https://img.shields.io/badge/Made%20With-Python%203.8-blue.svg?style=for-the-badge&logo=Python)
-![Reailway](https://img.shields.io/badge/deploy_to-Railway-a0c4ff.svg?style=for-the-badge&logo=Railway)
+![Version](https://img.shields.io/badge/Latest%20Version-V3.1.0-blue?style=for-the-badge)
 
 **Update** (21 December 2022): Deploy Lavalink server on `Replit`
 ## What is Ashema?
@@ -61,7 +59,7 @@ $ python -m ashema
 
 ## Documentation
 
-Since Tiamut is built on the basis of `Hikari` library, it is essential to look for the library documentation for further implementation. 
+Since Ashema is built on the basis of `Hikari` library, it is essential to look for the library documentation for further implementation. 
 
 - `Hikari`: https://www.hikari-py.dev/
 - `Lightbulb`: https://hikari-lightbulb.readthedocs.io/en/latest/

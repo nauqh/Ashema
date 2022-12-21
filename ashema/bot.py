@@ -29,7 +29,7 @@ bot.d.sched = AsyncIOScheduler()
 bot.d.sched.configure(timezone=utc)
 
 # Extension
-bot.load_extensions_from("./tiamut/extensions", must_exist=True)
+bot.load_extensions_from("./ashema/extensions", must_exist=True)
 
 
 @bot.listen(hikari.StartingEvent)
