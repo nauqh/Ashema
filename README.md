@@ -1,6 +1,6 @@
 # Ashema The Listener - Music Discord Bot                          
 
-![Version](https://img.shields.io/badge/Latest%20Version-V2.3.0-blue?style=for-the-badge)
+![Version](https://img.shields.io/badge/Latest%20Version-V3.1.0-blue?style=for-the-badge)
 
 ![Python](https://img.shields.io/badge/Made%20With-Python%203.8-blue.svg?style=for-the-badge&logo=Python)
 ![Discord](https://img.shields.io/discord/574921006817476608.svg?label=Discord&logo=Discord&colorB=7289da&style=for-the-badge)
