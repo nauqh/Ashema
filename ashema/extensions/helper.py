@@ -19,15 +19,17 @@ async def chill(ctx: lightbulb.Context) -> None:
         await _join(ctx)
 
     next_page_token = None 
-    for i in range(random.randint(1, 7)):  # 336 vid ~ 6 pages of 50 search results
+    for i in range(1, 7):  # 336 vid ~ 7 pages
         res = youtube.playlistItems().list(
             playlistId='PL-F2EKRbzrNS0mQqAW6tt75FTgf4j5gjS',
             part='snippet',
             pageToken = next_page_token,
             maxResults=50).execute()
         next_page_token = res.get('nextPageToken')
+        if not next_page_token:
+            break
 
-    vid_id = res['items'][random.randint(0, 50)]['snippet']['resourceId']['videoId']
+    vid_id = res['items'][random.randint(0, len(res['items']))]['snippet']['resourceId']['videoId']
     url = f'https://www.youtube.com/watch?v={vid_id}'
 
     query_information = await plugin.bot.d.lavalink.auto_search_tracks(url)
