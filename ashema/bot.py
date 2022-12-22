@@ -44,21 +44,9 @@ async def on_started(ctx: hikari.StartedEvent) -> None:
     p = Playlist(
         'https://www.youtube.com/playlist?list=PLTJ_0TN1M7KXGl2mGUo-30PYyzSK9aZ8q')
 
-    embed = (
-        hikari.Embed(
-            title="☃️Happy Snow Giving",
-            colour=0x181818,
-        )
-        .set_thumbnail("ashema.gif")
-        .add_field(
-            "❄️Enjoy",
-            p[len(p)-1]
-        )
-    )
-
     await bot.rest.create_message(
         int(os.environ["STDOUT_CHANNEL_ID"]),
-        embed=embed
+        f"☃️❄️ Happy Snow Giving\n{p[len(p)-1]}"
     )
 
 
