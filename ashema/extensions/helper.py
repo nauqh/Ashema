@@ -6,7 +6,7 @@ import lavasnek_rs
 
 from ashema.extensions.music import _join
 
-youtube = build('youtube', 'v3', developerKey=os.environ["YOUTUBE_API_KEY"])
+youtube = build('youtube', 'v3', static_discovery=False, developerKey=os.environ["YOUTUBE_API_KEY"])
 plugin = lightbulb.Plugin("Helper", "Other commands")
 
 @plugin.command()
