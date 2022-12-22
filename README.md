@@ -26,7 +26,6 @@ You can host this bot on Heroku.
 
 To configure automatic updates:
  - [x] Login to [GitHub](https://github.com/) and verify your account.
- - [x] [Fork the repo](https://github.com/kyb3r/modmail/fork).
  - [x] Install the [Pull app](https://github.com/apps/pull) for your fork. 
  - [x] Then go to the Deploy tab in your [Heroku account](https://dashboard.heroku.com/apps) of your bot app, select GitHub and connect your fork (usually by typing `Ashema`) 
  - [x] Turn on auto-deploy for the `master` branch.
