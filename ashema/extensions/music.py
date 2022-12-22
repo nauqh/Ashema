@@ -9,7 +9,6 @@ import lightbulb
 
 import lavasnek_rs
 
-
 class EventHandler:
     """Events from the Lavalink server"""
 
@@ -104,17 +103,11 @@ async def leave(ctx: lightbulb.Context) -> None:
 
 @plugin.command()
 @lightbulb.add_checks(lightbulb.guild_only)
-@lightbulb.option("query", "The query to search for.", modifier=lightbulb.OptionModifier.CONSUME_REST)
+@lightbulb.option("query", "The query to search for.", modifier=lightbulb.OptionModifier.CONSUME_REST, required=True)
 @lightbulb.command("play", "Searches the query on youtube, or adds the URL to the queue.")
 @lightbulb.implements(lightbulb.PrefixCommand, lightbulb.SlashCommand)
 async def play(ctx: lightbulb.Context) -> None:
-
     query = ctx.options.query
-
-    if not query:
-        await ctx.respond("Please specify a query.")
-        return None
-
     con = plugin.bot.d.lavalink.get_guild_gateway_connection_info(ctx.guild_id)
     if not con:
         await _join(ctx)
