@@ -64,3 +64,8 @@ Since Ashema is built on the basis of `Hikari` library, it is essential to look 
 - `Lightbulb`: https://hikari-lightbulb.readthedocs.io/en/latest/
 - `Lavasnek_rs`: https://docs.vicky.rs/lavasnek_rs.html
 
+## Contributors
+
+Nauqh - [Github](https://github.com/nauqh) - hodominhquan@gmail.com
+
+Peter - [Github](https://github.com/xuanbachtran02) - xuanbachtran02@gmail.com
