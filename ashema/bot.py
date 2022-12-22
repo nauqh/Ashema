@@ -9,7 +9,7 @@ import ashema
 import hikari
 import lightbulb
 
-
+from pytube import Playlist
 from pytz import utc
 from aiohttp import ClientSession
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
@@ -40,10 +40,25 @@ async def on_starting(_: hikari.StartingEvent) -> None:
 
 
 @bot.listen(hikari.StartedEvent)
-async def on_started(_: hikari.StartedEvent) -> None:
+async def on_started(ctx: hikari.StartedEvent) -> None:
+    p = Playlist(
+        'https://www.youtube.com/playlist?list=PLTJ_0TN1M7KXGl2mGUo-30PYyzSK9aZ8q')
+
+    embed = (
+        hikari.Embed(
+            title="☃️Happy Snow Giving",
+            colour=0x181818,
+        )
+        .set_thumbnail("ashema.gif")
+        .add_field(
+            "❄️Enjoy",
+            p[len(p)-1]
+        )
+    )
+
     await bot.rest.create_message(
         int(os.environ["STDOUT_CHANNEL_ID"]),
-        f"`Ashema` is now online! (Version {ashema.__version__})",
+        embed=embed
     )
 
 
