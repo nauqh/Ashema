@@ -125,3 +125,4 @@
 2022-12-25 18:26:20.557  INFO 1456 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: ngu 1 minh
 2022-12-25 18:26:20.564  INFO 1456 --- [XNIO-1 I/O-1] lavalink.server.io.SocketServer          : {"guildId":"872141661038313503","noReplace":false,"op":"play","startTime":0,"track":"QAAAswIAT2hpZXV0aHVoYWkgLSBuZ+G7pyBt4buZdCBtw6xuaCAodMOsbmggcuG6pXQgdMOsbmgpIGZ0LiBuZWdhdiAocHJvZC4gYnkga2V3dGlpZSkACkhJRVVUSFVIQUkAAAAAAAMksAALMU9KUWR4VDZXSEUAAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj0xT0pRZHhUNldIRQAHeW91dHViZQAAAAAAAAAA"}
 2022-12-25 18:26:21.238  INFO 1456 --- [XNIO-1 I/O-1] lavalink.server.io.SocketServer          : {"guildId":"872141661038313503","op":"pause","pause":false}
+2022-12-25 18:26:50.363  INFO 1456 --- [XNIO-1 I/O-1] lavalink.server.io.SocketServer          : {"guildId":"872141661038313503","op":"destroy"}
