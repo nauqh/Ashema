@@ -9,8 +9,6 @@ import ashema
 import hikari
 import lightbulb
 
-from pytz import utc
-from aiohttp import ClientSession
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
 log = logging.getLogger(__name__)
@@ -18,14 +16,12 @@ log = logging.getLogger(__name__)
 bot = lightbulb.BotApp(
     os.environ["TOKEN"],
     intents=hikari.Intents.ALL,
-    case_insensitive_prefix_commands=True,
     default_enabled_guilds=int(os.environ["GUILD_ID"]),
     help_slash_command=True
 )
 
 # Scheduler
 bot.d.sched = AsyncIOScheduler()
-bot.d.sched.configure(timezone=utc)
 
 # Extension
 bot.load_extensions_from("./ashema/extensions", must_exist=True)
@@ -34,8 +30,7 @@ bot.load_extensions_from("./ashema/extensions", must_exist=True)
 @bot.listen(hikari.StartingEvent)
 async def on_starting(_: hikari.StartingEvent) -> None:
     bot.d.sched.start()
-    bot.d.session = ClientSession(trust_env=True)
-    log.info("AIOHTTP session started")
+    log.info("APScheduler started")
 
 
 @bot.listen(hikari.StartedEvent)
