@@ -37,19 +37,18 @@ async def on_starting(_: hikari.StartingEvent) -> None:
 async def on_started(_: hikari.StartedEvent) -> None:
     await bot.rest.create_message(
         int(os.environ["STDOUT_CHANNEL_ID"]),
-        "☃️❄️ Ashema is online"
+        "☃️Ashema is online"
     )
 
 
 @bot.listen(hikari.StoppingEvent)
 async def on_stopping(_: hikari.StoppingEvent) -> None:
     bot.d.sched.shutdown()
-    await bot.d.session.close()
-    log.info("AIOHTTP session closed")
+    log.info("APScheduler shut downed")
 
     await bot.rest.create_message(
         int(os.environ["STDOUT_CHANNEL_ID"]),
-        f"`Ashema` is shutting down",
+        "❄️Ashema is shutting down",
     )
 
 
