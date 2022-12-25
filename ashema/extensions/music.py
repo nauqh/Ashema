@@ -9,6 +9,7 @@ import lightbulb
 
 import lavasnek_rs
 
+
 class EventHandler:
     """Events from the Lavalink server"""
 
@@ -61,7 +62,7 @@ async def start_lavalink(event: hikari.ShardReadyEvent) -> None:
     builder = (
         lavasnek_rs.LavalinkBuilder(
             event.my_user.id, os.environ["TOKEN"]).set_is_ssl(True).set_port(443)
-        .set_host("lavalink.nauqh.repl.co").set_password('Ilovemyfamily110')
+        .set_host("node1.kartadharta.xyz").set_password('kdlavalink')
     )
 
     # builder.set_start_gateway(False)

@@ -9,7 +9,6 @@ import ashema
 import hikari
 import lightbulb
 
-from pytube import Playlist
 from pytz import utc
 from aiohttp import ClientSession
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
@@ -40,13 +39,10 @@ async def on_starting(_: hikari.StartingEvent) -> None:
 
 
 @bot.listen(hikari.StartedEvent)
-async def on_started(ctx: hikari.StartedEvent) -> None:
-    p = Playlist(
-        'https://www.youtube.com/playlist?list=PLTJ_0TN1M7KXGl2mGUo-30PYyzSK9aZ8q')
-
+async def on_started(_: hikari.StartedEvent) -> None:
     await bot.rest.create_message(
         int(os.environ["STDOUT_CHANNEL_ID"]),
-        f"☃️❄️ Happy Snow Giving\n{p[len(p)-1]}"
+        "☃️❄️ Ashema is online"
     )
 
 
