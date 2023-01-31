@@ -1,61 +1,21 @@
-""" Ashema main functionalities """
-
-__last_modified__ = "21 December 2022"
-
-import logging
 import os
-
-import ashema
 import hikari
 import lightbulb
-
-from apscheduler.schedulers.asyncio import AsyncIOScheduler
-
-log = logging.getLogger(__name__)
 
 bot = lightbulb.BotApp(
     os.environ["TOKEN"],
     intents=hikari.Intents.ALL,
     default_enabled_guilds=int(os.environ["GUILD_ID"]),
-    help_slash_command=True
+    help_slash_command=True,
+    banner=None,
 )
-
-# Scheduler
-bot.d.sched = AsyncIOScheduler()
 
 # Extension
 bot.load_extensions_from("./ashema/extensions", must_exist=True)
 
-
-@bot.listen(hikari.StartingEvent)
-async def on_starting(_: hikari.StartingEvent) -> None:
-    bot.d.sched.start()
-    log.info("APScheduler started")
-
-
-@bot.listen(hikari.StartedEvent)
-async def on_started(_: hikari.StartedEvent) -> None:
-    await bot.rest.create_message(
-        int(os.environ["STDOUT_CHANNEL_ID"]),
-        "☃️Ashema is online"
-    )
-
-
-@bot.listen(hikari.StoppingEvent)
-async def on_stopping(_: hikari.StoppingEvent) -> None:
-    bot.d.sched.shutdown()
-    log.info("APScheduler shut downed")
-
-    await bot.rest.create_message(
-        int(os.environ["STDOUT_CHANNEL_ID"]),
-        "❄️Ashema is shutting down",
-    )
-
-
 def run() -> None:
     bot.run(
-        activity=hikari.Activity(
-            name=f"/help • Version {ashema.__version__}",
-            type=hikari.ActivityType.LISTENING,
-        )
-    )
+        activity = hikari.Activity(
+            name = f"/play",
+            type = hikari.ActivityType.LISTENING
+    ))

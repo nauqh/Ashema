@@ -2,4 +2,6 @@
 .cache
 __pycache__/
 .idea/
-./logs
+lavalink_server/
+store/
+config/
