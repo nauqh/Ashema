@@ -6,7 +6,8 @@ bot = lightbulb.BotApp(
     os.environ["TOKEN"],
     intents=hikari.Intents.ALL,
     default_enabled_guilds=int(os.environ["GUILD_ID"]),
-    help_slash_command=True
+    help_slash_command=True,
+    banner=None,
 )
 
 # Extension

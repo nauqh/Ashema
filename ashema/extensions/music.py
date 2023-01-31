@@ -58,8 +58,8 @@ async def start_lavalink(event: hikari.ShardReadyEvent) -> None:
     builder = (
         lavasnek_rs.LavalinkBuilder(event.my_user.id, os.environ["TOKEN"])
         .set_host('localhost')
-        .set_port(2333)
-        .set_password('youshallnotpass')
+        .set_port(int(os.environ['LAVALINK_PORT']))
+        .set_password(os.environ['LAVALINK_PASS'])
     )
 
     if HIKARI_VOICE:
